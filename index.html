@@ -1,7 +1,7 @@
 <html>
 <body>
     <h2>学习语言顺便学学English</h2>
-    <button onclick="document.getElementById('Place A').style.display='block'">V</button>
+    <button id="Turn on" onclick="document.getElementById('Place A').style.display='block';document.getElementById('Turn down').style.display='block';this.style.display='none'">V</button>
     <div id="Place A" style="display:none;">
         <p>document n.文件</p>
         <p>element n.要素</p>
@@ -13,6 +13,6 @@
     </div>
     
     <p></p>
-    <button onclick="document.getElementById('Place A').style.display='none'"> ^ </button>
+    <button id="Turn down" style="display: none;" onclick="document.getElementById('Place A').style.display='none';document.getElementById('Turn on').style.display='block';this.style.display='none'"> ^ </button>
 </body>
 </html>
